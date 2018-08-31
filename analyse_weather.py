@@ -19,7 +19,11 @@ def get_data():
 
 def hottest_summer(df) -> int:
     """
-    Find the year with the highest average monthly temperature
+    Find the year with the highest average Summer month temperature
+
+    This takes a dataframe with a column for each month (shortened 3-letter name in capitals).
+    Each column contains the average temperature for that month in Celcius (or NaN if missing data).
+    The months June, July and August are used to find the hottest summer.
     """
     df['summer_max'] = df[['JUN', 'JUL', 'AUG']].max(axis=1)
     hottest_year = df['summer_max'].idxmax()

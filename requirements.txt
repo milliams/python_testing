@@ -1,4 +1,7 @@
 pandas
 pytest
+pytest-mock
 hypothesis
 hypothesis[pandas]
+ipython
+requests
