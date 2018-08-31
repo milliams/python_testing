@@ -7,14 +7,20 @@ import string
 
 import requests
 
+
 def add_elements(a, b):
     """
     Given two lists, add them together elementwise and return the result
+
+    Examples:
+        >>> add_elements([1, 2], [3, 4])
+        [4, 6]
     """
     z = []
     for i in range(len(a)):
         z.append(a[i] + b[i])
     return z
+
 
 def get_gutenberg_text(book: str) -> str:
     """
@@ -31,6 +37,7 @@ def get_gutenberg_text(book: str) -> str:
             in_book = True
     return '\n'.join(result)
 
+
 def word_count(text: str, word: str='') -> int:
     """
     Count the number of occurences of ``word`` in a string.
@@ -45,6 +52,7 @@ def word_count(text: str, word: str='') -> int:
         return count
     else:
         return len(text.split())
+
 
 def count_capital_words_in_website(url: str) -> int:
     """

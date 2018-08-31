@@ -15,6 +15,10 @@ letter_to_morse = {'a':'.-', 'b':'-...', 'c':'-.-.', 'd':'-..', 'e':'.', 'f':'..
 def encode(message: str) -> str:
     """
     Given a string of charaters, return the morse message as a string
+
+    Examples:
+        >>> encode("sos")
+        '... --- ...'
     """
     return ' '.join(letter_to_morse[l] for l in message)
 
