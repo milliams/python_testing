@@ -3,7 +3,7 @@ from my_lib import add_elements
 
 
 @pytest.fixture
-def pair_of_lists()
+def pair_of_lists():
     return ([1, 2], [3, 4])
 
 

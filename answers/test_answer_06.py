@@ -25,4 +25,3 @@ def test_count_lines(warandpeace):
 ])
 def test_word_counts(warandpeace, word, count):
     assert word_count(warandpeace, word) == count
-

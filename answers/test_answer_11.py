@@ -20,6 +20,8 @@ def test_hottest_summer_auto(df):
 
 
 # Below is annother example of using fixtures but for this function:
+import pytest
+from pandas import DataFrame
 
 
 @pytest.fixture

@@ -8,4 +8,3 @@ from my_lib import add_elements
 ])
 def test_add(a, b, answer):
     assert add_elements(a, b) == answer
-
